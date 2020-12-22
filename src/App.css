@@ -12,9 +12,15 @@
   background-color: white;
 }
 
+.loader {
+  position: absolute;
+  margin: 0 auto;
+  top: 10em;
+}
+
 .product-toolbar-fixed-top {
   position: fixed;
-  top: 4em;
+  top: 3em;
   z-index: 2;
   width: 100%;
   text-align: center;
@@ -66,8 +72,18 @@
     position: relative;
 }
 
+.product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .flex-container-horizontal {

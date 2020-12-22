@@ -5,7 +5,9 @@ function Home(props) {
     const showProducts = React.useCallback((e) => {
         props.history.push(newUrl)
     }, [props])
-    return <button type='button' onClick={showProducts} >Show products</button>
+    return <div style={{position: 'absolute', top: '10em', width: '100%', textAlign: 'center'}}>
+        <button type='button' onClick={showProducts} >Show products</button>
+    </div>
 }
 
 export default Home

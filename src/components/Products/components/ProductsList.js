@@ -1,5 +1,4 @@
 import React from 'react'
-import { Col } from 'react-bootstrap';
 import Product from './Product';
 
 function ProductsList(props) {
@@ -9,14 +8,14 @@ function ProductsList(props) {
         {
             products.map(p => {
                 return <li className='product-container' key={p.skuId}>
-                    <Col xs={6}>
+                    <div >
                         <Product
                             deepLinkUrl={p.deepLinkUrl}
                             skuImageUrl={p.skuImageUrl}
                             skuName={p.skuName}
                             defaultPrice={p.defaultPrice}
                         />
-                    </Col>
+                    </div>
                 </li>
             })
         }

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
-import { Container, Row } from 'react-bootstrap'
 import ProductToolBar from '../ProductToolBar'
 import ProductsList from './components/ProductsList'
 import {initProducts} from '../../actions/init'
@@ -15,26 +14,22 @@ function Products(props) {
         props.initProducts('loreal-paris')
     }, [])
 
-    return products.length ? <Container fluid={'xs'}>
-        <Row className='product-toolbar-fixed-top'>
+    return products.length ? <div className='main-container'>
+        <div className='product-toolbar-fixed-top'>
             <ProductToolBar title={title} filters={aggregations} sorts={sorts} totalCount={totalCount} />
-        </Row>
-        <Row className='products-list' style={{marginTop: '5px'}}>
+        </div>
+        <div className='products-list' style={{marginTop: '5px'}}>
             <ProductsList
                 products={products}
             />
-            <div className='sort-options-container'>
-                sort options
-            </div>
-        </Row>
-    </Container>
+        </div>
+    </div>
     : <Loader />
 }
 
 const mapStateToProps = (state, props) => {
-    const productsData = state.products
-    const {segments, filters} = urlDecoder(props.location)
-    const { title, products, searchQuery, aggregations, sorts, totalCount } = productsData
+    const productsData = state.products || ''
+    const { title, products=[], searchQuery='', aggregations, sorts, totalCount } = productsData
     return {
         title,
         products,

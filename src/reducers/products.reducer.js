@@ -6,7 +6,7 @@ const initialState = {
 export default function dataSets(state = initialState, action) {
 
     if (action.type === INIT_PRODUCTS) {
-        return action.payload.response ? action.payload.response : null
+        return action.payload.response ? action.payload.response : initialState
     }
     return state
 

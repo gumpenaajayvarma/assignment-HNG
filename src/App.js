@@ -4,7 +4,6 @@ import { Counter } from './features/counter/Counter';
 import AppBanner from './components/AppBanner';
 import Routes from './web/routes'
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
