@@ -1,0 +1,76 @@
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-fixed-top {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 16px 0;
+  background-color: white;
+}
+
+.product-toolbar-fixed-top {
+  position: fixed;
+  top: 4em;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.menu-btn {
+  background-color: white;
+  padding: 5px;
+  margin: 0 10px;
+  border: transparent;
+}
+
+.menu-btn:hover {
+  background-color: rgb(230, 230, 230);
+  cursor:pointer;
+}
+
+.toolbar-btn {
+  font-size: 0.875em;
+  width: 35%;
+  padding: 0.4em 0px;
+  margin-right: 0.3125em;
+  background: none;
+  color: rgb(99, 99, 99);
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.app-container {
+  margin-top: 20px;
+}
+
+.app-logo-name {
+  color: orange;
+  margin: 0 10px;
+}
+
+.products-list {
+  position: absolute;
+  top: 10em;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.product-container {
+  width: 44%;
+    padding: 2.5%;
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-container-horizontal {
+  display: flex;
+  flex-flow: row wrap;
+}
