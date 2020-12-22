@@ -3,6 +3,7 @@ import React from 'react'
 function Home(props) {
     const newUrl = '/brands/loreal-paris'
     const showProducts = React.useCallback((e) => {
+        document.title='loreal-paris'
         props.history.push(newUrl)
     }, [props])
     return <div style={{position: 'absolute', top: '10em', width: '100%', textAlign: 'center'}}>

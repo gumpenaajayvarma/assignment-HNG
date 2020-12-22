@@ -12,6 +12,7 @@ function ProductsList(props) {
                         <Product
                             deepLinkUrl={p.deepLinkUrl}
                             skuImageUrl={p.skuImageUrl}
+                            skuUrlLink={p.skuUrlLink}
                             skuName={p.skuName}
                             defaultPrice={p.defaultPrice}
                         />

@@ -72,10 +72,20 @@
     position: relative;
 }
 
+.product-img-container {
+  display: flex;
+  justify-content: center;
+}
 .product-img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width:8em;
+}
+
+.product-img > img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 ul {
